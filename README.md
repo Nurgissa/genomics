@@ -1,4 +1,9 @@
-genomics
-========
+Computational genomics
+======================
 
-Computational genomics (final project)
+A final project in Computational genomics course
+
+
+Team Members:
+------------
+- Nurgissa Umatay
