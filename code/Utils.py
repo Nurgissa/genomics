@@ -2,6 +2,9 @@ import fileinput
 import random
 
 def simulate_sequence(length, seed):
+    """
+    TO-DO:
+    """
     random.seed(seed)
     dna = ['A', 'C', 'G', 'T', 'N']
     sequence = ''
@@ -10,14 +13,24 @@ def simulate_sequence(length, seed):
     return sequence
 
 def read_fasta():
-    snippet = ""
+    """
+    TO-DO:
+    """
+    sequence = ""
     for line in fileinput.input():
         #if line[0] != '>':
-        snippet += line.strip()
-    return [ord(char) for char in snippet]
+        sequence += line.strip()
+    print "File was loaded.\n "
+    return sequence
+
+def convert_to_int(my_string):
+    """
+    TO-DO:
+    """
+    return [ord(char) for char in my_string]
+
 
 def main():
-    print read_fasta()
     pass
 
 if __name__ == '__main__':
