@@ -6,8 +6,7 @@ class Sample():
         self.r = None
         self.i = index
 
-    def __repr__(self):
-        return "({0},{1},{2},{3})".format(self.t, self.i, self.r, self.p)
+    
 
     def get_triplet(self):
         return self.t
