@@ -6,7 +6,9 @@ class Sample():
         self.r = None
         self.i = index
 
-    
+    def __repr__(self):
+        return "({0},{1},{2},{3})".format(self.t, self.i, self.r, self.p)
+
     def get_triplet(self):
         return self.t
     
@@ -25,9 +27,6 @@ class Sample():
     def set_rank(self, rank):
         self.r = rank
 
- 
-
-
 class Nonsample():
     def __init__(self, T, index, rank):
         self.i = index
@@ -37,3 +36,6 @@ class Nonsample():
             self.pr = (0, rank)
         else:
             self.pr = (T[self.i], rank)
+
+    def __repr__(self):
+        return "({0},{1})".format(self.pr, self.i)
