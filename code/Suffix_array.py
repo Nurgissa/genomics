@@ -131,9 +131,9 @@ def radix_sort(my_list, n, max_len):
 
 def main():
     
-    T = "yabbadabadoo"
+    #T = "yabbadabadoo"
 
-    #T = ut.read_fasta()
+    T = ut.read_fasta()
 
     #print "Started processing...\n"
     start_time = time.time()
