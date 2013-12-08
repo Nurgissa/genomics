@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+# This code was used to benchmark my code.
+# The original link is here: https://code.google.com/p/pysuffix/
+# All credits go to the authors
 #tri des caractères utilisés dans une chaîne
 import Utils as ut
 import time

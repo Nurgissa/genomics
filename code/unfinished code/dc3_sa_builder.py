@@ -1,4 +1,5 @@
 import cProfile
+import Utils as ut
 
 class Sample():
     def __init__(self, T, idx, length):
@@ -9,21 +10,27 @@ class Sample():
         self._rpos = None
 
     
+    @property
     def triple(self):
         return self._triple
-    
+
+    @property
     def index(self):
         return self._index
 
+    @property
     def rpos(self):
         return self._rpos
 
+    @rpos.setter
     def rpos(self, pos):
         self._rpos = pos
         
+    @property
     def rank(self):
         return self._rank
 
+    @rank.setter
     def rank(self, pos):
         self._rank = pos
     
@@ -150,10 +157,11 @@ rec_num = []
 def main():
     
     T = ""
-    
+
+    T = read_fasta()
     print "File loaded..."
     start_time = time.time()
-    sa = suffix_array(T, rec_num)
+    sa = suffix_array(ut.convert_to_int(T), rec_num)
     print time.time() - start_time, "seconds"
     print len(rec_num)
     
